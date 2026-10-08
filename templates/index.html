@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Personal Finance Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>My Personal Finance Assistant</h1>
+
+        <p class="description">
+            Manage your monthly salary, investments, insurance, shopping,
+            and other expenses in one place.
+        </p>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Salary</th>
+                        <th>Investment</th>
+                        <th>Insurance</th>
+                        <th>Shopping</th>
+                        <th>Other Expenses</th>
+                        <th>Remaining</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <!-- January -->
+                    <tr>
+                        <td class="month">January</td>
+
+                        <td>
+                            <input type="number"
+                                   class="salary"
+                                   placeholder="Salary"
+                                   min="0">
+                        </td>
+
+                        <td>
+                            <input type="number"
+                                   class="investment"
+                                   placeholder="Amount"
+                                   min="0">
+
+                            <span class="percentage investment-percent">
+                                0%
+                            </span>
+                        </td>
+
+                        <td>
+                            <input type="number"
+                                   class="insurance"
+                                   placeholder="Amount"
+                                   min="0">
+
+                            <span class="percentage insurance-percent">
+                                0%
+                            </span>
+                        </td>
+
+                        <td>
+                            <input type="number"
+                                   class="shopping"
+                                   placeholder="Amount"
+                                   min="0">
+
+                            <span class="percentage shopping-percent">
+                                0%
+                            </span>
+                        </td>
+
+                        <td>
+                            <input type="number"
+                                   class="other"
+                                   placeholder="Amount"
+                                   min="0">
+
+                            <span class="percentage other-percent">
+                                0%
+                            </span>
+                        </td>
+
+                        <td class="remaining">
+                            0
+                        </td>
+                    </tr>
+
+
+                    <!-- February -->
+                    <tr>
+                        <td class="month">February</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- March -->
+                    <tr>
+                        <td class="month">March</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- April -->
+                    <tr>
+                        <td class="month">April</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- May -->
+                    <tr>
+                        <td class="month">May</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- June -->
+                    <tr>
+                        <td class="month">June</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- July -->
+                    <tr>
+                        <td class="month">July</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- August -->
+                    <tr>
+                        <td class="month">August</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- September -->
+                    <tr>
+                        <td class="month">September</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- October -->
+                    <tr>
+                        <td class="month">October</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- November -->
+                    <tr>
+                        <td class="month">November</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+
+                    <!-- December -->
+                    <tr>
+                        <td class="month">December</td>
+
+                        <td>
+                            <input type="number" class="salary" placeholder="Salary" min="0">
+                        </td>
+
+                        <td>
+                            <input type="number" class="investment" placeholder="Amount" min="0">
+                            <span class="percentage investment-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="insurance" placeholder="Amount" min="0">
+                            <span class="percentage insurance-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="shopping" placeholder="Amount" min="0">
+                            <span class="percentage shopping-percent">0%</span>
+                        </td>
+
+                        <td>
+                            <input type="number" class="other" placeholder="Amount" min="0">
+                            <span class="percentage other-percent">0%</span>
+                        </td>
+
+                        <td class="remaining">0</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
